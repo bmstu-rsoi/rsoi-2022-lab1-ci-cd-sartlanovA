@@ -32,10 +32,10 @@ jobs:
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6
         with:
-        heroku_api_key: "e53782e3-2850-4334-94dc-8c60fb0a0f6c"
-        heroku_app_name: rsoi13
-        heroku_email: alina_sartlanova@mail.ru
-        usedocker: true
+          heroku_api_key: "e53782e3-2850-4334-94dc-8c60fb0a0f6c"
+          heroku_app_name: rsoi13
+          heroku_email: alina_sartlanova@mail.ru
+          usedocker: true
 
       # TODO build, test and deploy project
 

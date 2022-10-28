@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - master
+<<<<<<< HEAD
+=======
+  pull_request:
+    branches:
+      - master
+>>>>>>> master
 jobs:
   build:
     name: Autograding
@@ -12,6 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
+<<<<<<< HEAD
       - name: Setup .NET SDK 
         uses: actions/setup-dotnet@v2
         with:
@@ -33,6 +40,17 @@ jobs:
           heroku_app_name: rsoi13
           heroku_email: alina_sartlanova@mail.ru
           usedocker: true
+=======
+      # TODO build, test and deploy project
+
+      - name: Run API Tests
+        uses: matt-ball/newman-action@master
+        with:
+          collection: postman/[inst] Lab1.postman_collection.json
+          environment: postman/[inst][heroku] Lab1.postman_environment.json
+          delayRequest: 100
+          reporters: '[ "cli" ]'
+>>>>>>> master
 
       - name: Autograding
         uses: education/autograding@v1
@@ -46,4 +64,8 @@ jobs:
           homework_number: 1
           user_column: 'D'
           column_offset: 'F'
+<<<<<<< HEAD
           mark: "'+"
+=======
+          mark: "'+"
+>>>>>>> master

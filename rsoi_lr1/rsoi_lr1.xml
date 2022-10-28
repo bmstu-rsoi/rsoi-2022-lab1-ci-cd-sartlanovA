@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>rsoi_lr1</name>
+    </assembly>
+    <members>
+        <member name="M:rsoi_lr1.Controllers.PersonsController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

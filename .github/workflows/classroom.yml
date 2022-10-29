@@ -28,7 +28,7 @@ jobs:
         run: dotnet publish rsoi_lr1/rsoi_lr1.csproj -c Release -o publish --no-restore
 
       - name: Test
-        run:  dotnet test rsoi_lr1/rsoi_test_lr1/rsoi_test_lr1.csproj --no-restore
+        run:  dotnet test rsoi_test_lr1/rsoi_test_lr1.csproj --no-restore
 
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6

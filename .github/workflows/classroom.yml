@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup .NET SDK
+      - name: Setup .NET SDK 
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 3.1.x
@@ -25,10 +25,10 @@ jobs:
         run: dotnet restore rsoi_lr1.sln
 
       - name: Build
-        run: dotnet publish rsoi_lr1/rsoi_lr1/rsoi_lr1.csproj -c Release -o publish —no-restore
+        run: dotnet publish rsoi_lr1/rsoi_lr1/rsoi_lr1.csproj -c Release -o publish --no-restore
 
       - name: Test
-        run: dotnet test rsoi_lr1/rsoi_test_lr1/rsoi_test_lr1.csproj —no-restore
+        run:  dotnet test rsoi_lr1/rsoi_test_lr1/rsoi_test_lr1.csproj --no-restore
 
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6

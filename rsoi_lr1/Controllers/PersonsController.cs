@@ -78,7 +78,7 @@ namespace rsoi_lr1.Controllers
             person.Address = patchPersonDto.Address != null ? patchPersonDto.Address : person.Address;
             person.Job = patchPersonDto.Job != null ? patchPersonDto.Job : person.Job;
             await _personsContext.SaveChangesAsync();
-            return NoContent();
+            return Ok(Convert(person));
         }
 
         [HttpDelete("{personId:int}")]
@@ -89,7 +89,7 @@ namespace rsoi_lr1.Controllers
                 return NotFound();
             _personsContext.Persons.Remove(person);
             await _personsContext.SaveChangesAsync();
-            return NoContent();
+            return Ok(Convert(person));
         }
 
         private static PersonDto Convert(PersonEntity entity)

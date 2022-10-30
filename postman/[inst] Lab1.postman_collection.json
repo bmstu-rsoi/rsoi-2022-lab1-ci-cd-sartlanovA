@@ -277,23 +277,23 @@
 	"variable": [
 		{
 			"key": "name",
-			"value": "https://rsoi13.herokuapp.com"
+			"value": ""
 		},
 		{
 			"key": "address",
-			"value": "https://rsoi13.herokuapp.com"
+			"value": ""
 		},
 		{
 			"key": "work",
-			"value": "https://rsoi13.herokuapp.com"
+			"value": ""
 		},
 		{
 			"key": "age",
-			"value": "https://rsoi13.herokuapp.com"
+			"value": ""
 		},
 		{
 			"key": "personId",
-			"value": "https://rsoi13.herokuapp.com"
+			"value": ""
 		}
 	]
 }

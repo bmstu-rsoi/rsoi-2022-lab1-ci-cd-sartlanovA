@@ -89,7 +89,7 @@ namespace rsoi_lr1.Controllers
                 return NotFound();
             _personsContext.Persons.Remove(person);
             await _personsContext.SaveChangesAsync();
-            return Ok();
+            return NoContent();
         }
 
 

@@ -92,6 +92,7 @@ namespace rsoi_lr1.Controllers
             return Ok();
         }
 
+
         private static PersonDto Convert(PersonEntity entity)
         {
             return new PersonDto()
